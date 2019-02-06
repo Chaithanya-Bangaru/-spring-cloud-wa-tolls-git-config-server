@@ -1,0 +1,39 @@
+---
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Chaithanya-Bangaru/spring-cloud-config-wa-tolls
+          #username: 
+          #password:
+          # searches in the subfolders matching the station* folders and so URL can retrieve these props eg . http://localhost:8888/s2rates-dev.properties
+          # Even other formats like yml,json also can be retrieved like this - http://localhost:8888/s1rates-qa.json, http://localhost:8888/s1rates-qa.yml
+          # http://localhost:8888/s3rates-raaj.properties
+          search-paths:
+          - 'station*'
+          repos: 
+            perf:
+              pattern:
+              - '*/perf'
+              uri: https://github.com/Chaithanya-Bangaru/spring-cloudconfig-wa-tolls-perf
+              search-paths:
+              - 'station*'
+              
+          
+            
+            
+              
+                        
+          
+            
+                     
+                 
+                 
+            
+            
+                
+             
+          
