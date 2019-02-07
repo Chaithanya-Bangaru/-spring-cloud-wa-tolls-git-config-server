@@ -5,6 +5,8 @@ spring:
   cloud:
     config:
       server:
+        encrypt:
+          enabled: false # this property false is not working here in yml file but bootstrap.properties its working.
         git:
           uri: https://github.com/Chaithanya-Bangaru/spring-cloud-config-wa-tolls
           #username: 
@@ -21,6 +23,7 @@ spring:
               uri: https://github.com/Chaithanya-Bangaru/spring-cloudconfig-wa-tolls-perf              
               search-paths:
               - 'station*'
+
   security:
     user:
       name: ivaan
