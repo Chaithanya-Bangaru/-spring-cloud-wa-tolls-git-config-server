@@ -21,7 +21,10 @@ spring:
               uri: https://github.com/Chaithanya-Bangaru/spring-cloudconfig-wa-tolls-perf
               search-paths:
               - 'station*'
-              
+  security:
+    user:
+      name: ivaan
+      password: ivaan
           
             
             
