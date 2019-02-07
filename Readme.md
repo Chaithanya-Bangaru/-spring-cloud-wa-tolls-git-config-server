@@ -1,3 +1,4 @@
+# Ensure JCE jar files are added to the JVM /.../security folders
 # spring-cloudconfig
 Useful to override and commit to remote repo
 
